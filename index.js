@@ -7,42 +7,15 @@ import BDS3Clause from './data/BSD3Clause.json'
 import Unlicense from './data/Unlicense.json'
 import MS_PL from './data/MS-PL.json'
 
-export type LicensesData = typeof Licenses
 export const Licenses = {
-  Apachev2: Apachev2 as LicenseData,
-  MIT: MIT as LicenseData,
-  MPL20: MPL20 as LicenseData,
-  ISC: ISC as LicenseData,
-  GPL3: GPL3 as LicenseData,
-  BDS3Clause: BDS3Clause as LicenseData,
-  Unlicense: Unlicense as LicenseData,
-  MS_PL: MS_PL as LicenseData
-}
-
-export type LicenseTagType = 'can' | 'cannot' | 'must'
-export type LicenseAlign = 'center' | 'left'
-export type LicenseTagTitle = keyof typeof TAGS_DESCRIPTIONS
-
-export type LicenseTag = {
-    title: LicenseTagTitle
-    description?: string
-}
-export type LicenseTags = {
-  [key in LicenseTagType]: LicenseTag[]
-}
-
-export type LicenseInnerData = {
-  text?: string
-  newline?: boolean
-  align?: LicenseAlign
-  tags?: string[]
-}[]
-
-export type LicenseData = {
-  title: string
-  overview: string
-  tags: LicenseTags
-  data: LicenseInnerData
+  Apachev2,
+  MIT,
+  MPL20,
+  ISC,
+  GPL3,
+  BDS3Clause,
+  Unlicense,
+  MS_PL
 }
 
 export const TAGS_DESCRIPTIONS = {
