@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "keyofStringsOnly": true,
+    "noEmit": true,
+    "allowSyntheticDefaultImports": true,
+    "lib": [
+      "es2017",
+      "dom"
+    ],
+    "moduleResolution": "node",
+    "jsx": "preserve",
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "strictNullChecks": true,
+    "noImplicitAny": true,
+    "strictFunctionTypes": true,
+  },
+  "exclude": [
+    "node_modules/**"
+  ],
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+  ]
+}
